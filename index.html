@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" crossorigin href="/index-U6C2nx-I.css">
+</head>
+<body>
+    <nav class="bg-slate-400 p-1">
+        <ul class="flex items-center">
+            <li class="c1 border-2 border-zinc-950  p-4 mx-auto rounded-lg hover:bg-black hover:text-white hover:font-bold active:text-lg border-hidden">Home</li>
+            <li class="c2 border-2 border-zinc-950  p-4 mx-auto rounded-lg hover:bg-black hover:text-white hover:font-bold active:text-lg border-hidden"><a target="_blank" href="https://www.linkedin.com/in/rajiv-nayan-pathak-7b8a80232/">Linked in</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <p class="text-center pt-[15vh] font-bold text-xl">Color Scheme Switcher</p><br><br>
+
+    <div class=" flex mx-[5vw] items-center">
+ 
+<div class="button text-gray-600 button m-[2px] md:text-xl lg:text-2xl xl:text-3xl bg-gray-600 border-black border-2" id="grey"><p class=" invisible">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore asperiores sunt iure eius c</p></div>
+
+<div class="button text-green-500 button m-[2px] md:text-xl lg:text-2xl xl:text-3xl bg-green-500 border-black border-2 " id="green"><p class=" invisible">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore asperiores sunt iure eius c</p></div>
+
+<div class="button text-blue-700 button m-[2px] md:text-xl lg:text-2xl xl:text-3xl bg-blue-700 border-black border-2" id="blue"><p class=" invisible">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore asperiores sunt iure eius c</p></div>
+<div class="button text-yellow-400 button m-[2px] md:text-xl lg:text-2xl xl:text-3xl bg-yellow-400 border-black border-2" id="yellow"><p class=" invisible">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore asperiores sunt iure eius c</p></div>
+</div>
+<p class="text-center pt-[5vh] font-bold text-xl sm:pt-[10vh]">Try clicking on onw of the colour above to change the background color of this page!</p>
+</div>
+<script>
+    const buttons = document.querySelectorAll('.button')
+const body = document.querySelector("body")
+
+buttons.forEach(function (button) {
+    console.log(button);
+    button.addEventListener('click',function(e){
+        console.log(e);
+        console.log(e.target);
+        if (e.target.id === 'grey') {
+            body.style.background = e.target.id;
+        }
+        if (e.target.id === 'green') {
+            body.style.background = e.target.id;
+        }if (e.target.id === 'yellow') {
+            body.style.background = e.target.id;
+        }if (e.target.id === 'blue') {
+            body.style.background = e.target.id;
+        }
+    })
+})
+</script>
+</body>
+</html>
